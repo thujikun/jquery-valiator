@@ -1,0 +1,170 @@
+extends /layouts/_default
+
+block content
+  main
+    form(name='input-form', method='post', action='http://google.com', formnovalidate='formnovalidate', data-role="validation")
+      div.input-table
+        section
+
+          dl.input-row.required
+            dt='Name'
+            dd
+              input(type='text', name='name', placeholder='（例）Tarou', title='Name', data-validation=JSON.stringify(validationConfig['name']))
+
+          dl.input-row.required
+            dt='Surname'
+            dd
+              input(type='text', name = 'surname', placeholder='Yamada', title='Surname', data-validation=JSON.stringify(validationConfig['surname']))
+
+          dl.input-row.required
+            dt='Country'
+            dd
+              select.js-country(name='country', title='Country', data-validation=JSON.stringify(validationConfig['country']))
+                option(value='')='Choose Country'
+                option(value='jp')='Japan'
+                option(value='us')='United states'
+                option(value='uk')='United kingdom'
+
+        section
+
+          dl.input-row.postal-row.required
+            dt="Postal Code"
+            dd
+              div.normal
+                input.zip1.numeric(type='text', name='zip1', placeholder='132', title="Postal Code1", pattern='[0-9]*', maxlength="3", data-validation=JSON.stringify(validationConfig['zip1']))
+                | &nbsp;-&nbsp;
+                input.zip2.numeric(type='text', name='zip2', placeholder='0034', title='Postal Code2', pattern='[0-9]*', maxlength="4", data-validation=JSON.stringify(validationConfig['zip2']))
+              div.uk
+                input.zip.long(type='text', name='zip', title='Postal Code',  data-validation=JSON.stringify(validationConfig['zip-text']))
+
+          dl.input-row.required
+            dt='Address(Prefecture)'
+            dd
+              input.long(type='text', name='address-prefecture', placeholder='', title='Address(Prefecture)', data-validation=JSON.stringify(validationConfig['address-prefecture']))
+
+          dl.input-row.required
+            dt='Address(District)'
+            dd
+              input.long(type='text', name='address-district', placeholder='', title='Address(District)', data-validation=JSON.stringify(validationConfig['address-district']))
+
+          dl.input-row.required
+            dt='Address(Street)'
+            dd
+              input.long(type='text', name='address-street', placeholder='', title='Address(Street)', data-validation=JSON.stringify(validationConfig['address-street']))
+
+        section
+
+          dl.input-row.required
+            dt='Mobile Telephone'
+            dd
+              input(type='tel', name='mobile-tel1', placeholder='090', title='Mobile Telephone1', pattern='[0-9]*',maxlength="3", data-validation=JSON.stringify(validationConfig['mobile-tel1']))
+              | &nbsp;-&nbsp;
+              input(type='tel', name='mobile-tel2', placeholder='1234', title='Mobile Telephone2', pattern='[0-9]*', maxlength="4", data-validation=JSON.stringify(validationConfig['mobile-tel2']))
+              | &nbsp;-&nbsp;
+              input(type='tel', name='mobile-tel3', placeholder='5678', title='Mobile Telephone3', pattern='[0-9]*', maxlength="4", data-validation=JSON.stringify(validationConfig['mobile-tel3']))
+
+          dl.input-row.required
+            dt='Telephone'
+            dd
+              input.normal(type='text', name='tel', placeholder='09012345678', title='Telephone', pattern='[0-9\\+]*', data-validation=JSON.stringify(validationConfig['tel']))
+
+        section
+
+          dl.input-row.required
+            dt='Email'
+            dd
+              input.long(type='email', name='email', placeholder='（例）tarou@mail.example.com', title='Email', data-validation=JSON.stringify(validationConfig['email']))
+
+          dl.input-row.required
+            dt='Email(confirmation)'
+            dd
+              input.long(type='email', name='email-confirmation', title='Email(confirmation)', data-validation=JSON.stringify(validationConfig['email-confirmation']))
+
+        section
+
+          dl.input-row.required
+            dt='Credit Card Number'
+            dd
+              input.numeric.semi-long(type='text', name='credit', placeholder='4111111111111111', title='Credit Card Number', maxlength="19", data-validation=JSON.stringify(validationConfig['credit']))
+          dl.input-row.required
+            dt='Expiry Date'
+            dd
+              select(name='credit1-month', title='Month', data-validation=JSON.stringify(validationConfig['credit1-month']))
+                - for (var k = 0; k < 12; k++)
+                  - var month = k + 1 < 10? '0' + (k + 1): k + 1
+                  option(value=(k + 1)) #{month}
+              | &nbsp;/&nbsp;
+              select(name='credit1-year', title='Year', data-validation=JSON.stringify(validationConfig['credit1-year']))
+                - for (var k = 0; k < 20; k++)
+                  - var year = k + 14 < 10? '0' + (k + 14): k + 14
+                  option(value=(k + 14)) #{year}
+          dl.input-row.required
+            dt='Security Number'
+            dd
+              input.short(type='password', name='credit1-sec-number', placeholder='096', title='Security Number', pattern='[0-9]*', maxlength='3', data-validation=JSON.stringify(validationConfig['credit1-sec-number']))
+
+        section
+
+          dl.input-row.input-logo.required
+            dt='Credit Card Number'
+            dd
+              input.credit-item.js-credit-item.numeric(type='text', name='credit1', placeholder='4111', title='Credit Card Number1', pattern='[0-9]*', maxlength='4' data-validation=JSON.stringify(validationConfig['credit1']))
+              | &nbsp;
+              input.credit-item.js-credit-item.numeric(type='text', name='credit2', placeholder='1111', title='Credit Card Number2', pattern='[0-9]*', maxlength='4' data-validation=JSON.stringify(validationConfig['credit2']))
+              | &nbsp;
+              input.credit-item.js-credit-item.numeric(type='text', name='credit3', placeholder='1111', title='Credit Card Number3', pattern='[0-9]*', maxlength='4' data-validation=JSON.stringify(validationConfig['credit3']))
+              | &nbsp;
+              input.credit-item.js-credit-item.numeric(type='text', name='credit4', placeholder='1111', title='Credit Card Number4', pattern='[0-9]*', maxlength='4', data-validation=JSON.stringify(validationConfig['credit4']))
+
+          dl.input-row.required
+            dt='Expiry Date'
+            dd
+              select(name = 'credit2-month', title='Month', data-validation=JSON.stringify(validationConfig['credit2-month']))
+                - for (var k = 0; k < 12; k++)
+                  - var month = k + 1 < 10? '0' + (k + 1): k + 1
+                  option(value=(k + 1)) #{month}
+              | &nbsp;/&nbsp;
+              select(name = 'credit2-year', title='Year', data-validation=JSON.stringify(validationConfig['credit2-year']))
+                - for (var k = 0; k < 20; k++)
+                  - var year = k + 14 < 10? '0' + (k + 14): k + 14
+                  option(value=(k + 14)) #{year}
+          dl.input-row.required
+            dt='Security Number'
+            dd
+              input.short(type='password', name='credit2-sec-number', placeholder='096', title='Security Number', pattern='[0-9]*', maxlength="3", data-validation=JSON.stringify(validationConfig['credit2-sec-number']))
+
+        section
+
+          dl.input-row.required
+            dt='Points'
+            dd
+              select(name='points', title='Points', data-validation=JSON.stringify(validationConfig['points']))
+                option(value='100')='100'
+                option(value='200')='200'
+                option(value='300')='300'
+                option(value='400')='400'
+                option(value='500')='500'
+                option(value='600')='600'
+                option(value='700')='700'
+                option(value='800')='800'
+                option(value='900')='900'
+                option(value='1000')='1000'
+
+        section
+
+          dl.input-row.required
+            dt='Term'
+            dd
+              input.numeric(type='text', name='date-around-before', placeholder='yyyy/mm/dd', title='Before Date', pattern='[0-9\/]*', maxlength='10' data-validation=JSON.stringify(validationConfig['date-around-before']))
+              | &nbsp;~&nbsp;
+              input.numeric(type='text', name='date-around-after', placeholder='yyyy/mm/dd', title='After Date', pattern='[0-9\/]*', maxlength='10' data-validation=JSON.stringify(validationConfig['date-around-after']))
+
+      ul.error-messages
+      div.operation
+        input.button.disabled(type='submit', value='Send')
+        a.button.cancel(href = '#')='Cancel'
+
+block script
+  script(src='js/vendor/jquery/jquery.min.js')
+  script(src='js/jquery-validator.js')
+  script(src='js/execute.js')

@@ -1,0 +1,518 @@
+[
+    {
+        "name": "required",
+        "unit": {
+            "required": true
+        }
+    },
+    {
+        "name": "required2",
+        "unit": {
+            "required": true
+        }
+    },
+    {
+        "name": "required-check",
+        "unit": {
+            "required-check": true
+        }
+    },
+    {
+        "name": "required-check2",
+        "unit": {
+            "required-check": true
+        }
+    },
+    {
+        "name": "required-check3",
+        "unit": {
+            "required-check": 2
+        }
+    },
+    {
+        "name": "required-check4",
+        "unit": {
+            "required-check": 2
+        }
+    },
+    {
+        "name": "length",
+        "unit": {
+            "length": 3
+        }
+    },
+    {
+        "name": "length2",
+        "unit": {
+            "length": 3
+        }
+    },
+    {
+        "name": "maxlength",
+        "unit": {
+            "maxlength": 3
+        }
+    },
+    {
+        "name": "maxlength2",
+        "unit": {
+            "maxlength": 3
+        }
+    },
+    {
+        "name": "minlength",
+        "unit": {
+            "minlength": 3
+        }
+    },
+    {
+        "name": "minlength2",
+        "unit": {
+            "minlength": 3
+        }
+    },
+    {
+        "name": "maxnum",
+        "unit": {
+            "maxnum": 100
+        }
+    },
+    {
+        "name": "maxnum2",
+        "unit": {
+            "maxnum": 100
+        }
+    },
+    {
+        "name": "minnum",
+        "unit": {
+            "minnum": 100
+        }
+    },
+    {
+        "name": "minnum2",
+        "unit": {
+            "minnum": 100
+        }
+    },
+    {
+        "name": "number",
+        "unit": {
+            "format": "number"
+        }
+    },
+    {
+        "name": "number2",
+        "unit": {
+            "format": "number"
+        }
+    },
+    {
+        "name": "half-char",
+        "unit": {
+            "format": "half-char"
+        }
+    },
+    {
+        "name": "half-char2",
+        "unit": {
+            "format": "half-char"
+        }
+    },
+    {
+        "name": "half",
+        "unit": {
+            "format": "half"
+        }
+    },
+    {
+        "name": "half2",
+        "unit": {
+            "format": "half"
+        }
+    },
+    {
+        "name": "tel",
+        "unit": {
+            "format": "tel"
+        }
+    },
+    {
+        "name": "tel2",
+        "unit": {
+            "format": "tel"
+        }
+    },
+    {
+        "name": "tel-i18n",
+        "unit": {
+            "format": "tel-i18n"
+        }
+    },
+    {
+        "name": "tel-i18n2",
+        "unit": {
+            "format": "tel-i18n"
+        }
+    },
+    {
+        "name": "url",
+        "unit": {
+            "format": "url"
+        }
+    },
+    {
+        "name": "url2",
+        "unit": {
+            "format": "url"
+        }
+    },
+    {
+        "name": "email",
+        "unit": {
+            "format": "email"
+        }
+    },
+    {
+        "name": "email2",
+        "unit": {
+            "format": "email"
+        }
+    },
+    {
+        "name": "full-kana",
+        "unit": {
+            "format": "full-kana"
+        }
+    },
+    {
+        "name": "full-kana2",
+        "unit": {
+            "format": "full-kana"
+        }
+    },
+    {
+        "name": "full-char",
+        "unit": {
+            "format": "full-char"
+        }
+    },
+    {
+        "name": "full-char2",
+        "unit": {
+            "format": "full-char"
+        }
+    },
+    {
+        "name": "date",
+        "unit": {
+            "format": "date"
+        }
+    },
+    {
+        "name": "date2",
+        "unit": {
+            "format": "date"
+        }
+    },
+    {
+        "name": "dateYM",
+        "unit": {
+            "format": "dateYM"
+        }
+    },
+    {
+        "name": "dateYM2",
+        "unit": {
+            "format": "dateYM"
+        }
+    },
+    {
+        "name": "credit",
+        "unit": {
+            "format": "credit"
+        }
+    },
+    {
+        "name": "credit2",
+        "unit": {
+            "format": "credit"
+        }
+    },
+    {
+        "name": "regexp",
+        "unit": {
+            "regexp": "^a"
+        }
+    },
+    {
+        "name": "regexp2",
+        "unit": {
+            "regexp": "^a"
+        }
+    },
+    {
+        "name": "relation-mail-body",
+        "relation": [
+            {
+                "type": "same",
+                "key": "email",
+                "role": "body"
+            }
+        ]
+    },
+    {
+        "name": "relation-mail-confirmation",
+        "relation": [
+            {
+                "type": "same",
+                "key": "email",
+                "role": "confirmation"
+            }
+        ]
+    },
+    {
+        "name": "relation-mail-body2",
+        "relation": [
+            {
+                "type": "same",
+                "key": "email2",
+                "role": "body"
+            }
+        ]
+    },
+    {
+        "name": "relation-mail-confirmation2",
+        "relation": [
+            {
+                "type": "same",
+                "key": "email2",
+                "role": "confirmation"
+            }
+        ]
+    },
+    {
+        "name": "relation-mail-body3",
+        "relation": [
+            {
+                "type": "same",
+                "key": "email3",
+                "role": "body"
+            }
+        ]
+    },
+    {
+        "name": "relation-mail-confirmation3",
+        "relation": [
+            {
+                "type": "same",
+                "key": "email3",
+                "role": "confirmation"
+            }
+        ]
+    },
+    {
+        "name": "relation-mail-body4",
+        "relation": [
+            {
+                "type": "same",
+                "key": "email4",
+                "role": "body"
+            }
+        ]
+    },
+    {
+        "name": "relation-mail-confirmation4",
+        "relation": [
+            {
+                "type": "same",
+                "key": "email4",
+                "role": "confirmation"
+            }
+        ]
+    },
+    {
+        "name": "date-around-before",
+        "relation": [
+            {
+                "type": "date-around",
+                "key": "date1",
+                "role": "before"
+            }
+        ]
+    },
+    {
+        "name": "date-around-after",
+        "relation": [
+            {
+                "type": "date-around",
+                "key": "date1",
+                "role": "after"
+            }
+        ]
+    },
+    {
+        "name": "date-around-before2",
+        "relation": [
+            {
+                "type": "date-around",
+                "key": "date2",
+                "role": "before"
+            }
+        ]
+    },
+    {
+        "name": "date-around-after2",
+        "relation": [
+            {
+                "type": "date-around",
+                "key": "date2",
+                "role": "after"
+            }
+        ]
+    },
+    {
+        "name": "credit-relation1-1",
+        "relation": [
+            {
+                "type": "credit",
+                "key": "credit"
+            }
+        ]
+    },
+    {
+        "name": "credit-relation1-2",
+        "relation": [
+            {
+                "type": "credit",
+                "key": "credit"
+            }
+        ]
+    },
+    {
+        "name": "credit-relation1-3",
+        "relation": [
+            {
+                "type": "credit",
+                "key": "credit"
+            }
+        ]
+    },
+    {
+        "name": "credit-relation1-4",
+        "relation": [
+            {
+                "type": "credit",
+                "key": "credit"
+            }
+        ]
+    },
+    {
+        "name": "credit-relation2-1",
+        "relation": [
+            {
+                "type": "credit",
+                "key": "credit2"
+            }
+        ]
+    },
+    {
+        "name": "credit-relation2-2",
+        "relation": [
+            {
+                "type": "credit",
+                "key": "credit2"
+            }
+        ]
+    },
+    {
+        "name": "credit-relation2-3",
+        "relation": [
+            {
+                "type": "credit",
+                "key": "credit2"
+            }
+        ]
+    },
+    {
+        "name": "credit-relation2-4",
+        "relation": [
+            {
+                "type": "credit",
+                "key": "credit2"
+            }
+        ]
+    },
+    {
+        "name": "credit-relation3-1",
+        "relation": [
+            {
+                "type": "credit",
+                "key": "credit3"
+            }
+        ]
+    },
+    {
+        "name": "credit-relation3-2",
+        "relation": [
+            {
+                "type": "credit",
+                "key": "credit3"
+            }
+        ]
+    },
+    {
+        "name": "credit-relation3-3",
+        "relation": [
+            {
+                "type": "credit",
+                "key": "credit3"
+            }
+        ]
+    },
+    {
+        "name": "credit-relation3-4",
+        "relation": [
+            {
+                "type": "credit",
+                "key": "credit3"
+            }
+        ]
+    },
+    {
+        "name": "credit-relation4-1",
+        "relation": [
+            {
+                "type": "credit",
+                "key": "credit4"
+            }
+        ]
+    },
+    {
+        "name": "credit-relation4-2",
+        "relation": [
+            {
+                "type": "credit",
+                "key": "credit4"
+            }
+        ]
+    },
+    {
+        "name": "credit-relation4-3",
+        "relation": [
+            {
+                "type": "credit",
+                "key": "credit4"
+            }
+        ]
+    },
+    {
+        "name": "credit-relation4-4",
+        "relation": [
+            {
+                "type": "credit",
+                "key": "credit4"
+            }
+        ]
+    }
+]

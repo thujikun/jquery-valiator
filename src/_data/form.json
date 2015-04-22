@@ -1,0 +1,220 @@
+{
+    "name": {
+        "unit": {
+            "required": true
+        }
+    },
+    "surname": {
+        "unit": {
+            "required": true
+        }
+    },
+    "country": {
+        "unit": {
+            "required": true
+        }
+    },
+    "zip1": {
+        "unit": {
+            "required": true,
+            "maxlength": 3,
+            "format": "number"
+        }
+    },
+    "zip2": {
+        "unit": {
+            "required": true,
+            "maxlength": 4,
+            "format": "number"
+        }
+    },
+    "zip-text": {
+        "unit": {
+            "required": true
+        }
+    },
+    "address-prefecture": {
+        "unit": {
+            "required": true
+        }
+    },
+    "address-district": {
+        "unit": {
+            "required": true
+        }
+    },
+    "address-street": {
+        "unit": {
+            "required": true
+        }
+    },
+    "mobile-tel1": {
+        "unit": {
+            "required": true,
+            "maxlength": 3,
+            "format": "tel"
+        }
+    },
+    "mobile-tel2": {
+        "unit": {
+            "required": true,
+            "maxlength": 4,
+            "format": "tel"
+        }
+    },
+    "mobile-tel3": {
+        "unit": {
+            "required": true,
+            "maxlength": 4,
+            "format": "tel"
+        }
+    },
+    "tel": {
+        "unit": {
+            "required": true,
+            "maxlength": 20,
+            "format": "tel-i18n"
+        }
+    },
+    "email": {
+        "unit": {
+            "required": true,
+            "format": "email"
+        },
+        "relation": [
+            {
+                "type": "same",
+                "key": "email",
+                "role": "body"
+            }
+        ]
+    },
+    "email-confirmation": {
+        "unit": {
+            "required": true
+        },
+        "relation": [
+            {
+                "type": "same",
+                "key": "email",
+                "role": "confirmation"
+            }
+        ]
+    },
+    "credit": {
+        "unit": {
+            "required": true,
+            "format": "credit",
+            "maxlength": 19
+        }
+    },
+    "credit1-month": {
+        "unit": {
+            "required": true
+        }
+    },
+    "credit1-year": {
+        "unit": {
+            "required": true
+        }
+    },
+    "credit1-sec-number": {
+        "unit": {
+            "required": true,
+            "maxlength": 3,
+            "format": "number"
+        }
+    },
+    "credit1": {
+        "unit": {
+            "required": true,
+            "format": "number",
+            "maxlength": 4
+        },
+        "relation": [
+            {
+                "type": "credit",
+                "key": "credit"
+            }
+        ]
+    },
+    "credit2": {
+        "unit": {
+            "required": true,
+            "format": "number",
+            "maxlength": 4
+        },
+        "relation": [
+            {
+                "type": "credit",
+                "key": "credit"
+            }
+        ]
+    },
+    "credit3": {
+        "unit": {
+            "required": true,
+            "format": "number",
+            "maxlength": 4
+        },
+        "relation": [
+            {
+                "type": "credit",
+                "key": "credit"
+            }
+        ]
+    },
+    "credit4": {
+        "unit": {
+            "required": true,
+            "format": "number",
+            "maxlength": 4
+        },
+        "relation": [
+            {
+                "type": "credit",
+                "key": "credit"
+            }
+        ]
+    },
+    "credit2-month": {
+        "unit": {
+            "required": true
+        }
+    },
+    "credit2-year": {
+        "unit": {
+            "required": true
+        }
+    },
+    "credit2-sec-number": {
+        "unit": {
+            "required": true,
+            "maxlength": 3,
+            "format": "number"
+        }
+    },
+    "points": {
+        "unit": {
+            "required": true
+        }
+    },
+    "date-around-before": {
+        "relation": [
+            {
+                "type": "date-around",
+                "key": "date",
+                "role": "before"
+            }
+        ]
+    },
+    "date-around-after": {
+        "relation": [
+            {
+                "type": "date-around",
+                "key": "date",
+                "role": "after"
+            }
+        ]
+    }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "jquery-validator",
+  "version": "1.0.0",
+  "authors": [
+    "thujikun"
+  ],
+  "description": "Validator jQuery plugin",
+  "main": "dist/jquery-validator.core.min.js",
+  "moduleType": [
+    "amd",
+    "globals"
+  ],
+  "keywords": [
+    "validator"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3"
+  }
+}

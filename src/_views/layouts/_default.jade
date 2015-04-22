@@ -1,0 +1,19 @@
+doctype html
+// if lt IE 7
+  <html lang="ja" class="ie6 older">
+//if IE 7
+  <html lang="ja" class="ie7">
+//if IE 8
+  <html lang="ja" class="ie8">
+// if IE 9
+  <html lang="ja" class="ie9">
+// [if (gt IE 9)|!(IE)] <!
+html(lang=ja)
+  // <![endif]
+  include default-partials/_html-header
+
+  body
+    include default-partials/_header
+    block content
+    include default-partials/_footer
+    block script
